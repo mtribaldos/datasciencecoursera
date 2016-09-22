@@ -15,5 +15,5 @@ sudo apt-get update
 
 And finally we install the package:
 ```
-sudo apt-get -y install r-base
+sudo apt-get -y install r-base r-base-dev
 ```
