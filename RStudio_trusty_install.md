@@ -1,4 +1,4 @@
-# RStudio install for Ubuntu 14.04 / Trusty (64 bits)
+# RStudio installation instructions (Ubuntu 14.04 / Trusty, 64 bits)
 
 Firstly we download the package from the RStudio website:
 ```
