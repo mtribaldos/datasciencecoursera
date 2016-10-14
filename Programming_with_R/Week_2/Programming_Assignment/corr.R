@@ -8,7 +8,7 @@ corr <- function(directory, threshold = 0) {
     above_thr <- compl$id[compl$nobs > threshold]
 
     data <- alldata[alldata$ID %in% above_thr,]
-    #aggregate(data, by=list(data$ID), FUN=function(x) cor(x["sulfate"], x["nitrate"]))
-    aggregate(data$sulfate, by=list(data$ID), FUN=function(x) mean(x, na.rm=TRUE))
+    result <- ddply(data, "ID", function(x) cor(x$sulfate, x$nitrate, use="complete.obs"))
+    result$V1
 }
 
